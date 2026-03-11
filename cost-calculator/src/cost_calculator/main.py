@@ -1,7 +1,7 @@
 from fastapi import FastAPI , Request , Response , Form 
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
+# from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 import math
 
@@ -29,7 +29,7 @@ def calculate_cost(tile_price, tile_area, room_width, room_height):
 
 
 templates = Jinja2Templates(directory=str(BASE_DIR/"templates"))
-app.mount("/static" , StaticFiles(directory= str(BASE_DIR/"static")) , name="static")
+# app.mount("/static" , StaticFiles(directory= str(BASE_DIR/"static")) , name="static")
 
 
 @app.get("/" , response_class=HTMLResponse)
