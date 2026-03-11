@@ -5,7 +5,7 @@
 Live Preview: [https://TileCostCalculator.onrender.com](https://TileCostCalculator.onrender.com)
 
 
-GitHub Repository: [https://github.com/nishchup489-afk/TileCostCalculator] (https://github.com/nishchup489-afk/TileCostCalculator)
+GitHub Repository: [https://github.com/nishchup489-afk/TileCostCalculator](https://github.com/nishchup489-afk/TileCostCalculator)
 
 ---
 
