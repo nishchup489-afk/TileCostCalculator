@@ -1,0 +1,1 @@
+from src.cost_calculator.main import app

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tile Cost Calculator</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-blue-950 to-black min-h-screen flex items-center justify-center text-white">
+
+<main class="w-full max-w-3xl p-6">
+
+<div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl p-8">
+
+<h1 class="text-4xl font-bold text-center mb-2 text-cyan-400">
+Tile Cost Calculator
+</h1>
+
+<p class="text-center text-gray-300 mb-8">
+Calculate how many tiles you need and the total cost instantly.
+</p>
+
+
+<form action="/calc" method="post" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+<div>
+<label class="block text-sm text-gray-300 mb-1">
+Tile Price ($ each)
+</label>
+<input 
+name="tiles_price"
+type="number"
+step="any"
+required
+class="w-full p-3 rounded-lg bg-black/40 border border-gray-600 focus:border-cyan-400 outline-none"
+>
+</div>
+
+
+<div>
+<label class="block text-sm text-gray-300 mb-1">
+Tile Area (sq ft)
+</label>
+<input 
+name="tile_area"
+type="number"
+step="any"
+required
+class="w-full p-3 rounded-lg bg-black/40 border border-gray-600 focus:border-cyan-400 outline-none"
+>
+</div>
+
+
+<div>
+<label class="block text-sm text-gray-300 mb-1">
+Room Width (ft)
+</label>
+<input 
+name="room_width"
+type="number"
+step="any"
+required
+class="w-full p-3 rounded-lg bg-black/40 border border-gray-600 focus:border-cyan-400 outline-none"
+>
+</div>
+
+
+<div>
+<label class="block text-sm text-gray-300 mb-1">
+Room Height (ft)
+</label>
+<input 
+name="room_height"
+type="number"
+step="any"
+required
+class="w-full p-3 rounded-lg bg-black/40 border border-gray-600 focus:border-cyan-400 outline-none"
+>
+</div>
+
+
+<button 
+class="md:col-span-2 mt-4 bg-cyan-500 hover:bg-cyan-400 transition-all duration-200 text-black font-semibold py-3 rounded-lg shadow-lg hover:scale-105"
+>
+Calculate Cost
+</button>
+
+</form>
+
+
+{% if result %}
+
+<div class="mt-10 bg-black/40 border border-cyan-500 rounded-xl p-6 text-center">
+
+<h2 class="text-2xl font-semibold text-cyan-400 mb-4">
+Result
+</h2>
+
+<p class="text-lg">
+Tiles Needed :
+<span class="text-yellow-400 font-bold">
+{{ result[0] }}
+</span>
+</p>
+
+<p class="text-lg mt-2">
+Total Cost :
+<span class="text-green-400 font-bold">
+$ {{ result[1] }}
+</span>
+</p>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</main>
+
+</body>
+</html>
