@@ -2,7 +2,7 @@
 
 **Project #6 of the 100 Python Project Series**
 
-Live Preview: [https://TileCostCalculator.onrender.com](https://TileCostCalculator.onrender.com)
+Live Preview: [https://tilecostcalculator.onrender.com](https://tilecostcalculator.onrender.com)
 
 
 GitHub Repository: [https://github.com/nishchup489-afk/TileCostCalculator](https://github.com/nishchup489-afk/TileCostCalculator)
